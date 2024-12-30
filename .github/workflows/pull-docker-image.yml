@@ -18,17 +18,17 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: hydren-dev
+        username: astralabs
         password: ${{ secrets.GHCR_TOKEN }}
 
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/hydren-dev/yolks:molactyl .
+        docker build -t ghcr.io/astralabs/yolks:astradash .
         echo "Image built successfully."
 
     - name: Push Docker image to GHCR
       run: |
-        docker push ghcr.io/hydren-dev/yolks:molactyl
+        docker push ghcr.io/hydren-dev/yolks:astradash
         echo "Image pushed to GHCR."
 
     - name: Verify Docker image
