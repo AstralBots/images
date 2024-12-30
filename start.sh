@@ -1,6 +1,5 @@
 #!/bin/sh
-echo "Node $(node -v)"
+echo "$(python --version)"
 
 
 $START
-$START2
