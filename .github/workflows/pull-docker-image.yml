@@ -28,7 +28,7 @@ jobs:
 
     - name: Push Docker image to GHCR
       run: |
-        docker push ghcr.io/hydren-dev/yolks:astradash
+        docker push ghcr.io/astralabs/yolks:astradash
         echo "Image pushed to GHCR."
 
     - name: Verify Docker image
