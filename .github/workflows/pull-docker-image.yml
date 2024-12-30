@@ -23,12 +23,12 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/astralabs/yolks:astradash .
+        docker build -t ghcr.io/micoms/yolks:astradash .
         echo "Image built successfully."
 
     - name: Push Docker image to GHCR
       run: |
-        docker push ghcr.io/astralabs/yolks:astradash
+        docker push ghcr.io/micoms/yolks:astradash
         echo "Image pushed to GHCR."
 
     - name: Verify Docker image
