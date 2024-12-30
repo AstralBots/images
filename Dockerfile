@@ -2,4 +2,8 @@ FROM node:lts
 
 WORKDIR /app/data
 
-CMD ["sh", "-c", "$START"]
+COPY start.sh /usr/local/bin/start.sh
+
+RUN chmod +x /usr/local/bin/start.sh
+
+CMD ["/usr/local/bin/start.sh"]
